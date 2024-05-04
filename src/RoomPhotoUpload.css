@@ -1,0 +1,91 @@
+/* RoomPhotoUpload.css */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: #f2f2f7;
+  color: #3838c3;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #1d1d1f;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #1d1d1f;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #6e6e73;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="file"] {
+  border: 1px solid #d2d2d7;
+  background-color: #fff;
+  padding: 12px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+input[type="file"]::file-selector-button {
+  color: #fff;
+  background-color: #007aff;
+  border: none;
+  border-radius: 14px;
+  padding: 8px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+/* RoomPhotoUpload.css */
+.image-container {
+  position: relative;
+  width: 100%; /* Adjust width as necessary */
+  max-width: 600px; /* Adjust max-width as necessary */
+  margin-top: 20px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Additional styling for the spinner */
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
